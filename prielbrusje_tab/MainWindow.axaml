@@ -1,0 +1,49 @@
+<Window 
+	xmlns="https://github.com/avaloniaui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+	MinHeight="300" MinWidth="450"
+	x:Class="prielbrusje_tab.MainWindow"
+	RequestedThemeVariant="Light"
+	Title="prielbrusje_tab">
+	<Grid
+		ShowGridLines="False"
+		ColumnDefinitions="*,1.5*,*,*"
+		RowDefinitions=".4*,auto,*,.3*">
+		<Viewbox
+			 Grid.Column="1" Grid.Row="1">
+			<TextBlock
+				Text="Добро пожаловать"
+				Grid.ColumnSpan="2" FontSize="32"/>			
+		</Viewbox>
+		<Border
+			Grid.Column="1" Grid.Row="2" Background="rgb(118, 227, 131)"
+			CornerRadius="50" BorderBrush="rgb(73, 140,81)" BorderThickness="3">
+			<Grid
+				ShowGridLines="False" ColumnDefinitions="*,5*,*"
+				RowDefinitions=".2*,*,*,*,*,*,*">
+				<TextBlock
+					Grid.Row="1" Grid.Column="1" FontSize="18"
+					VerticalAlignment="Center"
+					Text="Логин:" Foreground="rgb(73, 140,81)"/>
+				<TextBox
+					Grid.Column="1" Grid.Row="2"/>
+				<TextBlock
+					Grid.Row="3" Grid.Column="1" FontSize="18"
+					VerticalAlignment="Center"
+					Text="Пароль:" Foreground="rgb(73, 140,81)"/>
+				<TextBox
+					Grid.Column="1" Grid.Row="4"/>
+				<Button
+					Grid.Column="1" Grid.Row="6"
+					Content="Гость"/>
+				<Button
+					HorizontalAlignment="Right"
+					Grid.Column="1" Grid.Row="6"
+					Content="Войти"/>
+			</Grid>
+		</Border>
+	</Grid>
+</Window>
