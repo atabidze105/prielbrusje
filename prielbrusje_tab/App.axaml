@@ -14,5 +14,8 @@
 			<Setter Property="Background" Value="rgb(73, 140,81)"/>
 			<Setter Property="Foreground" Value="White"/>
 		</Style>
+		<Style Selector="TextBox">
+			<Setter Property="MaxLength" Value="255"/>
+		</Style>
     </Application.Styles>
 </Application>

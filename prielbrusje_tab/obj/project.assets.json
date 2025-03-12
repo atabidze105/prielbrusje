@@ -6309,19 +6309,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Class_Student\\.nuget\\packages\\": {}
+    "C:\\Users\\prdb\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Class_Student\\Desktop\\ив1к-24\\prielbrusje_tab\\prielbrusje_tab\\prielbrusje_tab.csproj",
+      "projectUniqueName": "C:\\Users\\prdb\\Desktop\\tab projs\\prielbrusje\\prielbrusje_tab\\prielbrusje_tab.csproj",
       "projectName": "prielbrusje_tab",
-      "projectPath": "C:\\Users\\Class_Student\\Desktop\\ив1к-24\\prielbrusje_tab\\prielbrusje_tab\\prielbrusje_tab.csproj",
-      "packagesPath": "C:\\Users\\Class_Student\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Class_Student\\Desktop\\ив1к-24\\prielbrusje_tab\\prielbrusje_tab\\obj\\",
+      "projectPath": "C:\\Users\\prdb\\Desktop\\tab projs\\prielbrusje\\prielbrusje_tab\\prielbrusje_tab.csproj",
+      "packagesPath": "C:\\Users\\prdb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\prdb\\Desktop\\tab projs\\prielbrusje\\prielbrusje_tab\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Class_Student\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\prdb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -6417,7 +6417,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
