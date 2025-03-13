@@ -7,7 +7,8 @@
 	MinHeight="300" MinWidth="450"
 	x:Class="prielbrusje_tab.MainWindow"
 	RequestedThemeVariant="Light"
-	Title="prielbrusje_tab">
+	Title="prielbrusje_tab"
+	WindowStartupLocation="CenterOwner">
 	<Grid
 		ShowGridLines="False"
 		ColumnDefinitions="*,1.5*,*,*"
@@ -34,7 +35,7 @@
 				<Viewbox
 					Grid.Column="1" Grid.Row="2" Grid.ColumnSpan="3" HorizontalAlignment="Left">
 					<TextBox
-						Name="tbox_login"/>
+						Name="tbox_login" Text="fedorov@namecomp.ru"/>
 				</Viewbox>
 				<Viewbox
 					Grid.Row="3" Grid.Column="1" >
@@ -46,7 +47,7 @@
 				<Viewbox
 					Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="3" HorizontalAlignment="Left">
 					<TextBox
-						Name="tbox_password" PasswordChar="*">
+						Name="tbox_password" PasswordChar="*" Text="8ntwUp">
 						<TextBox.InnerRightContent>
 							<Button Content="👁️" Background="Transparent"
 									Click="Button_MaskOff"/>
@@ -56,6 +57,7 @@
 				<Viewbox
 					Grid.Column="3" Grid.Row="6">
 					<Button
+						Name="btn_login"
 						Content="Войти" Margin="3"
 						Click="Button_Login"/>
 				</Viewbox>

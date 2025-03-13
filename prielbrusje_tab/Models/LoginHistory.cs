@@ -12,4 +12,6 @@ public partial class LoginHistory
     public bool IsValid { get; set; }
 
     public virtual ICollection<User> IdUsers { get; set; } = new List<User>();
+
+    public string LoginResult => IsValid == true ? "Успешно" : "Неуспешно" ;
 }

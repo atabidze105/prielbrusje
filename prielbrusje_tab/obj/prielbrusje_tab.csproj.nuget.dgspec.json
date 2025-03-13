@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\prdb\\Desktop\\tab projs\\prielbrusje\\prielbrusje_tab\\prielbrusje_tab.csproj": {}
+    "C:\\Users\\etoch\\source\\repos\\prielbrusje\\prielbrusje_tab\\prielbrusje_tab.csproj": {}
   },
   "projects": {
-    "C:\\Users\\prdb\\Desktop\\tab projs\\prielbrusje\\prielbrusje_tab\\prielbrusje_tab.csproj": {
+    "C:\\Users\\etoch\\source\\repos\\prielbrusje\\prielbrusje_tab\\prielbrusje_tab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\prdb\\Desktop\\tab projs\\prielbrusje\\prielbrusje_tab\\prielbrusje_tab.csproj",
+        "projectUniqueName": "C:\\Users\\etoch\\source\\repos\\prielbrusje\\prielbrusje_tab\\prielbrusje_tab.csproj",
         "projectName": "prielbrusje_tab",
-        "projectPath": "C:\\Users\\prdb\\Desktop\\tab projs\\prielbrusje\\prielbrusje_tab\\prielbrusje_tab.csproj",
-        "packagesPath": "C:\\Users\\prdb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\prdb\\Desktop\\tab projs\\prielbrusje\\prielbrusje_tab\\obj\\",
+        "projectPath": "C:\\Users\\etoch\\source\\repos\\prielbrusje\\prielbrusje_tab\\prielbrusje_tab.csproj",
+        "packagesPath": "C:\\Users\\etoch\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\etoch\\source\\repos\\prielbrusje\\prielbrusje_tab\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\prdb\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\etoch\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

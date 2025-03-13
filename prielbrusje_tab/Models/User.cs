@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Avalonia.Media.Imaging;
+using System;
 using System.Collections.Generic;
 
 namespace prielbrusje_tab.Models;
@@ -21,9 +22,13 @@ public partial class User
 
     public int? IdClientInfo { get; set; }
 
+    public string? Photo { get; set; }
+
     public virtual ClientInfo? IdClientInfoNavigation { get; set; }
 
     public virtual Role IdRoleNavigation { get; set; } = null!;
 
     public virtual ICollection<LoginHistory> IdLogins { get; set; } = new List<LoginHistory>();
+
+    public Bitmap Image => new Bitmap(Photo != null ? $"Assets/{Photo}" : "Assets/placeholder.png");
 }
