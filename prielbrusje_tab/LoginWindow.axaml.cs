@@ -23,22 +23,22 @@ public partial class LoginWindow : Window
         grid_login.DataContext = _LogUser;
         RoleEnability(_LogUser.IdRole);
     }
-    public LoginWindow(User user)
-    {
-        _LogUser = user;
-        _LogTime = DateTime.Now.AddMinutes(10);
+    //public LoginWindow(User user)
+    //{
+    //    _LogUser = user;
+    //    _LogTime = DateTime.Now.AddMinutes(10);
 
-        InitializeComponent();
+    //    InitializeComponent();
 
-        grid_login.DataContext = _LogUser;
-        RoleEnability(_LogUser.IdRole);
+    //    grid_login.DataContext = _LogUser;
+    //    RoleEnability(_LogUser.IdRole);
 
-        TimeSpan t = _LogTime - DateTime.Now;
-        tblock_timer.Text = Convert.ToDateTime(t.ToString()).ToString("HH:mm:ss");
+    //    TimeSpan t = _LogTime - DateTime.Now;
+    //    tblock_timer.Text = Convert.ToDateTime(t.ToString()).ToString("HH:mm:ss");
 
-        _LogOutTimer.Tick += DispatcherTimer_LogOut;
-        _LogOutTimer.Start();
-    }
+    //    _LogOutTimer.Tick += DispatcherTimer_LogOut;
+    //    _LogOutTimer.Start();
+    //}
     public LoginWindow(User user, DateTime dateTime)
     {
         _LogUser = user;

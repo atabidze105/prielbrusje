@@ -7,7 +7,8 @@
 	x:Class="prielbrusje_tab.LoginWindow"
 	Title="LoginWindow"
 	x:CompileBindings="False"
-	WindowStartupLocation="CenterOwner">
+	WindowStartupLocation="CenterOwner"
+	RequestedThemeVariant="Light">
 	<Grid
 		Name="grid_login"
 		ShowGridLines="False"

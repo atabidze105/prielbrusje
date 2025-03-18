@@ -23,27 +23,30 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = prielbrusje_tab
-build_property.ProjectDir = C:\Users\etoch\source\repos\prielbrusje\prielbrusje_tab\
+build_property.ProjectDir = C:\Users\Class_Student\Desktop\demo\prielbrusje\prielbrusje_tab\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[C:/Users/etoch/source/repos/prielbrusje/prielbrusje_tab/App.axaml]
+[C:/Users/Class_Student/Desktop/demo/prielbrusje/prielbrusje_tab/AddClientInfoWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/etoch/source/repos/prielbrusje/prielbrusje_tab/LoginWindow.axaml]
+[C:/Users/Class_Student/Desktop/demo/prielbrusje/prielbrusje_tab/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/etoch/source/repos/prielbrusje/prielbrusje_tab/LogWindow.axaml]
+[C:/Users/Class_Student/Desktop/demo/prielbrusje/prielbrusje_tab/LoginWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/etoch/source/repos/prielbrusje/prielbrusje_tab/MainWindow.axaml]
+[C:/Users/Class_Student/Desktop/demo/prielbrusje/prielbrusje_tab/LogWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/etoch/source/repos/prielbrusje/prielbrusje_tab/OrderFormingWindow.axaml]
+[C:/Users/Class_Student/Desktop/demo/prielbrusje/prielbrusje_tab/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/etoch/source/repos/prielbrusje/prielbrusje_tab/PopupWindow.axaml]
+[C:/Users/Class_Student/Desktop/demo/prielbrusje/prielbrusje_tab/OrderFormingWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[C:/Users/etoch/source/repos/prielbrusje/prielbrusje_tab/ServiceWindow.axaml]
+[C:/Users/Class_Student/Desktop/demo/prielbrusje/prielbrusje_tab/PopupWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/Class_Student/Desktop/demo/prielbrusje/prielbrusje_tab/ServiceWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

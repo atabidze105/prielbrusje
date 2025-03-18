@@ -12,7 +12,7 @@ namespace prielbrusje_tab
     public partial class MainWindow : Window
     {
         private List<User> _Users = DBContext.Users.Include(x => x.IdClientInfoNavigation).Include(x => x.IdRoleNavigation).Include(x => x.IdLogins).OrderBy(x => x.Id).ToList();
-        private DispatcherTimer _BlockTimer = new DispatcherTimer() { Interval = new TimeSpan(0,3,0)};
+        private DispatcherTimer _BlockTimer = new DispatcherTimer() { Interval = new TimeSpan(0,3,0) };
         public MainWindow()
         {
             InitializeComponent();
@@ -22,6 +22,7 @@ namespace prielbrusje_tab
         {
             InitializeComponent();
             btn_login.IsEnabled = block;
+            _BlockTimer.Tick += DispatcherTimer_Tick;
             _BlockTimer.Start();
         }
 
@@ -40,8 +41,8 @@ namespace prielbrusje_tab
                     if (user.Password == tbox_password.Text)
                     {
                         user.IdLogins.Add(new LoginHistory() { LoginDateTime = DateTime.Now, IsValid = true });
-                        DBContext.SaveChanges();
-                        LoginWindow loginWindow = new LoginWindow(user);
+                        //DBContext.SaveChanges();
+                        LoginWindow loginWindow = new LoginWindow(user, new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 10, 0));
                         loginWindow.Show();
                         Close();
                     }

@@ -8,9 +8,14 @@
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="Assets\add.png" />
+    <None Remove="Assets\Добавить.png" />
     <None Remove="logo.ico" />
   </ItemGroup>
   <ItemGroup>
+    <AvaloniaResource Include="Assets\add.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </AvaloniaResource>
     <AvaloniaResource Include="logo.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </AvaloniaResource>

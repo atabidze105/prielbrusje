@@ -6,11 +6,13 @@
 	mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
 	x:Class="prielbrusje_tab.OrderFormingWindow"
 	Title="OrderFormingWindow"
+	xmlns:vm="using:prielbrusje_tab.Models"
+	x:DataType="vm:ClientInfo"
 	x:CompileBindings="False"
-	WindowStartupLocation="CenterOwner">
+	WindowStartupLocation="CenterOwner"
+	RequestedThemeVariant="Light">
 	<Grid
 		Name="grid_formingOrder"
-		ShowGridLines="False"
 		ColumnDefinitions="*,*,*" RowDefinitions="auto,*,auto">
 		<Panel
 			Background="rgb(118, 227, 131)" Grid.ColumnSpan="3">
@@ -41,40 +43,71 @@
 		<Grid
 			Grid.Row="1" RowDefinitions="auto,*" Grid.ColumnSpan="3">
 			<Button Content="Назад" Click="Button_ToLogWindow"/>
-			<Grid 
-				Grid.Row="1" ColumnDefinitions="*,*"
-				Name="grid_orderUserInfo">
+			<Grid
+				ShowGridLines="True"
+				Grid.Row="1" ColumnDefinitions="2*,*" RowDefinitions="*,*">
 				<StackPanel
 					Name="panel_order">
-					<CalendarDatePicker/>
-					<TimePicker/>
-					<Grid
-						ColumnDefinitions="*,*">
-						<ListBox
-							Name="lbox_allServices">
-							<ListBox.ItemTemplate>
-								<DataTemplate>
-									
-								</DataTemplate>
-							</ListBox.ItemTemplate>
-						</ListBox>
-						<ListBox Grid.Column="1" Name="lbox_selectedServices">
-							<ListBox.ItemTemplate>
-								<DataTemplate>
-
-								</DataTemplate>
-							</ListBox.ItemTemplate>							
-						</ListBox>
-					</Grid>
+					<TextBox IsEnabled="False"  HorizontalAlignment="Left" Watermark="Код заказа"
+							 Text="{Binding Code}"/>
+					<CalendarDatePicker Name="clndrdatepicker_closingDate"/>
+					<TimePicker Name="timepicker_rentTime" MinuteIncrement="20" ClockIdentifier="24HourClock"/>
 				</StackPanel>
+				<Grid
+					Grid.Row="1"
+					ColumnDefinitions="*,*">
+					<ListBox
+						Name="lbox_allServices">
+						<ListBox.ItemTemplate>
+							<DataTemplate>
+								<Border
+									BorderBrush="Black" BorderThickness="1" Background="White">
+									<Grid
+										Margin="5" ColumnDefinitions="*,*,auto">
+										<TextBlock Text="{Binding Name}" TextWrapping="WrapWithOverflow"/>
+										<TextBlock Text="{Binding PricePerHour, StringFormat='{}{0} руб./час'}"
+												   TextWrapping="WrapWithOverflow" Grid.Column="1"/>
+										<Button Grid.Column="2" Height="30">
+											<Image Source="/Assets/add.png"/>
+										</Button>
+									</Grid>
+								</Border>
+							</DataTemplate>
+						</ListBox.ItemTemplate>
+					</ListBox>
+					<ListBox Grid.Column="1" Name="lbox_selectedServices">
+						<ListBox.ItemTemplate>
+							<DataTemplate>
+
+							</DataTemplate>
+						</ListBox.ItemTemplate>
+					</ListBox>
+				</Grid>
 				<StackPanel
-					Grid.Column="1"
-					Name="panel_clientInfo">
-					<TextBox Text="{Binding Code}"/>
-					<TextBox Text="{Binding PassportSerie}"/>
-					<TextBox Text="{Binding PassportCode}"/>
-					<TextBox Text="{Binding DateOfBirth}"/>
-					<TextBox Text="{Binding Address}"/>
+					Grid.Column="1" Margin="5" Grid.RowSpan="2">
+					<TextBlock Text="Выбор клиента:"/>
+					<ComboBox Name="cbox_clientInfos" SelectionChanged="ComboBox_SelectionChangedClientInfo">
+						<ComboBox.ItemTemplate>
+							<DataTemplate>
+								<TextBlock>
+									<Run Text="{Binding PassportSerie}"/>
+									<Run Text="{Binding PassportCode}"/>
+								</TextBlock>
+							</DataTemplate>
+						</ComboBox.ItemTemplate>
+					</ComboBox>
+					<Button Content="Добавить информацию о клиенте" Click="Button_AddClient"/>
+					<StackPanel
+						Name="spanel_selectedUserInfo">
+						<TextBlock Text="{Binding Code, StringFormat='Код: {0}'}"/>
+						<TextBlock>
+							<Run Text="Паспортные данные:"/>
+							<Run Text="{Binding PassportSerie}"/>
+							<Run Text="{Binding PassportCode}"/>
+						</TextBlock>
+						<TextBlock Text="{Binding DateOfBirth, StringFormat='Дата рождения: {0}'}"/>
+						<TextBlock Text="{Binding Address, StringFormat='Адрес: {0}'}" TextWrapping="WrapWithOverflow"/>
+					</StackPanel>
 				</StackPanel>
 			</Grid>
 		</Grid>

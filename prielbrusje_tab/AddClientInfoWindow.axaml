@@ -1,0 +1,30 @@
+<Window 
+	xmlns="https://github.com/avaloniaui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" d:DesignWidth="300" d:DesignHeight="350"
+	Height="350" Width="300"  CanResize="False"
+	x:Class="prielbrusje_tab.AddClientInfoWindow"
+	Title="Добавление информации о клиенте"
+	x:CompileBindings="False"
+	WindowStartupLocation="CenterOwner"
+	RequestedThemeVariant="Light">
+	<Grid RowDefinitions="*,auto">
+		<StackPanel
+			Grid.Column="1" Margin="5"
+			Name="panel_clientInfo">
+			<TextBox Text="{Binding Code}" IsEnabled="False" Watermark="Код клиента" MaxLength="8" HorizontalAlignment="Left"/>
+			<TextBlock Text="Серия паспорта:" HorizontalAlignment="Left"/>
+			<MaskedTextBox Text="{Binding PassportSerie}" Mask="0000"  HorizontalAlignment="Left"/>
+			<TextBlock Text="Номер паспорта:"  HorizontalAlignment="Left"/>
+			<MaskedTextBox Text="{Binding PassportCode}" Mask="000000"  HorizontalAlignment="Left"/>
+			<TextBlock Text="Дата рождения:"/>
+			<CalendarDatePicker Name="clndrdatepicker_birthday" HorizontalAlignment="Left"/>
+			<TextBox Text="{Binding Address}" Watermark="Адрес проживания" HorizontalAlignment="Left"
+					 TextWrapping="WrapWithOverflow"/>
+		</StackPanel>
+		<Button Grid.Row="1" Content="Отмена" Margin="5" Click="Button_Cancel"/>
+		<Button Grid.Row="1" Content="Подтвердить" HorizontalAlignment="Right" Margin="5" Click="Button_Confirm"/>
+	</Grid>
+</Window>

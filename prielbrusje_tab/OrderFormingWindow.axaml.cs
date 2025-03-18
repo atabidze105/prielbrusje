@@ -4,7 +4,10 @@ using Avalonia.Markup.Xaml;
 using Avalonia.Threading;
 using prielbrusje_tab.Models;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
+using static prielbrusje_tab.Helper;
 
 namespace prielbrusje_tab;
 
@@ -16,13 +19,17 @@ public partial class OrderFormingWindow : Window
     private DateTime _LogTime = new();
     private Order _FormingOrder = new Order();
     private ClientInfo _FormingClientInfo = new ClientInfo();
+    private List<ClientInfo> _Clients = DBContext.ClientInfos.OrderBy(x => x.Id).ToList();
 
-    private ObservableCollection<Service> _AllServices = new ObservableCollection<Service>();
+    private ObservableCollection<Service> _AllServices = new ObservableCollection<Service>( DBContext.Services.OrderBy(x => x.Id) );
     private ObservableCollection<Service> _SelectedServices = new ObservableCollection<Service>();
 
     public OrderFormingWindow()
     {
         InitializeComponent();
+
+        lbox_allServices.ItemsSource = _AllServices;
+        lbox_selectedServices.ItemsSource = _SelectedServices;
     }
     public OrderFormingWindow(User user, DateTime time)
     {
@@ -32,14 +39,22 @@ public partial class OrderFormingWindow : Window
 
         InitializeComponent();
 
+        cbox_clientInfos.ItemsSource = _Clients.ToList();
         grid_formingOrder.DataContext = _LogUser;
+        panel_order.DataContext = _FormingOrder;
+        spanel_selectedUserInfo.DataContext = _FormingClientInfo;
 
         TimeSpan t = _LogTime - DateTime.Now;
         tblock_timer.Text = Convert.ToDateTime(t.ToString()).ToString("HH:mm:ss");
 
         _LogOutTimer.Tick += DispatcherTimer_LogOut;
         _LogOutTimer.Start();
+
+        lbox_allServices.ItemsSource = _AllServices;
+        lbox_selectedServices.ItemsSource = _SelectedServices;
     }
+
+
 
     private async void DispatcherTimer_LogOut(object? sender, EventArgs e) //Метод выхода из акк-а по истечению времени
     {
@@ -69,5 +84,33 @@ public partial class OrderFormingWindow : Window
         LoginWindow loginWindow = new LoginWindow(_LogUser, _Time);
         loginWindow.Show();
         Close();
+    }
+
+    private async void Button_AddClient(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        try
+        {
+            _FormingClientInfo = new ClientInfo();
+            AddClientInfoWindow addClientInfoWindow = new AddClientInfoWindow(_FormingClientInfo);
+            await addClientInfoWindow.ShowDialog(this);
+            if (_FormingClientInfo.PassportSerie.Contains("_") || _FormingClientInfo.PassportCode.Contains("_") ||
+                _FormingClientInfo.Address == "" || _FormingClientInfo.Address == null)
+            {
+                _FormingClientInfo = new ClientInfo();
+                return;
+            }
+
+            spanel_selectedUserInfo.DataContext = _FormingClientInfo;
+        }
+        catch
+        {
+
+        }
+    }
+
+    private void ComboBox_SelectionChangedClientInfo(object? sender, Avalonia.Controls.SelectionChangedEventArgs e)
+    {
+        _FormingClientInfo = cbox_clientInfos.SelectedItem as ClientInfo;
+        spanel_selectedUserInfo.DataContext = _FormingClientInfo;
     }
 }

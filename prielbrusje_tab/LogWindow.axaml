@@ -7,7 +7,8 @@
 	x:Class="prielbrusje_tab.LogWindow"
 	Title="LogWindow"
 	x:CompileBindings="False"
-	WindowStartupLocation="CenterOwner">
+	WindowStartupLocation="CenterOwner"
+	RequestedThemeVariant="Light">
 	<Grid
 		Name="grid_logList"
 		ShowGridLines="False"
