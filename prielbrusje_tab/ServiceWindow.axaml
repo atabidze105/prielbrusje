@@ -1,15 +1,15 @@
-<Window
+<Window 
 	xmlns="https://github.com/avaloniaui"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
 	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
 	mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-	x:Class="prielbrusje_tab.LoginWindow"
-	Title="LoginWindow"
+	x:Class="prielbrusje_tab.ServiceWindow"
+	Title="ServiceWindow"
 	x:CompileBindings="False"
 	WindowStartupLocation="CenterOwner">
 	<Grid
-		Name="grid_login"
+		Name="grid_servicesList"
 		ShowGridLines="False"
 		ColumnDefinitions="*,*,*" RowDefinitions="auto,*,auto">
 		<Panel
@@ -38,45 +38,27 @@
 					Grid.Column="1"/>
 			</Grid>
 		</Panel>
-		<StackPanel
-			Grid.Row="1">
-			<Button
-				Name="btn_toOrderForming"
-				IsEnabled="False"
-				Content="Формирование заказа"
-				Click="Button_ToOrderForming"/>
-			<Button
-				Name="btn_tovar"
-				IsEnabled="False"
-				Content="Принятие товара"/>
-			<Button
-				Name="btn_toServicesList"
-				IsEnabled="False"
-				Content="Список предоставляемых услуг"
-				Click="Button_ToServicesList"/>
-			<Button
-				Name="btn_toLogList"
-				IsEnabled="False"
-				Content="История вхождений в систему"
-				Click="Button_toLogList"/>
-			<Button
-				Content="Выйти"
-				Click="Button_LogOut"/>
-		</StackPanel>
-		<!--<Grid
-			ShowGridLines="True"
-			Grid.ColumnSpan="3" Grid.Row="1" ColumnDefinitions="*,*,*">
-			<Viewbox>
-				<Button Content="Формирование заказа"/>
-			</Viewbox>
-			<Viewbox
-				Grid.Column="1">
-				<Button Content="Принятие товара"/>
-			</Viewbox>
-			<Viewbox
-				Grid.Column="2">
-				<Button/>
-			</Viewbox>
-		</Grid>-->
+		<Grid
+			Grid.Row="1" RowDefinitions="auto,*" Grid.ColumnSpan="3">
+			<Button Content="Назад" Click="Button_BackToLogin"/>
+			<ListBox
+				Grid.Row="1" Name="lbox_services">
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<Border
+							Background="White" BorderThickness="1" BorderBrush="Black" CornerRadius="5">
+							<Grid
+								ColumnDefinitions="*,*">
+								<TextBlock Margin="5">
+									<Run Text="{Binding Code}"/>
+									<Run Text="{Binding Name}"/>
+								</TextBlock>
+								<TextBlock Grid.Column="1" Margin="5" Text="{Binding PricePerHour, StringFormat='{}{0} руб./час'}"/>
+							</Grid>
+						</Border>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+		</Grid>
 	</Grid>
 </Window>

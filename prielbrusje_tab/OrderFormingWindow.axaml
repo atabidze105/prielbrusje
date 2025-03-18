@@ -1,0 +1,82 @@
+<Window 
+	xmlns="https://github.com/avaloniaui"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+	x:Class="prielbrusje_tab.OrderFormingWindow"
+	Title="OrderFormingWindow"
+	x:CompileBindings="False"
+	WindowStartupLocation="CenterOwner">
+	<Grid
+		Name="grid_formingOrder"
+		ShowGridLines="False"
+		ColumnDefinitions="*,*,*" RowDefinitions="auto,*,auto">
+		<Panel
+			Background="rgb(118, 227, 131)" Grid.ColumnSpan="3">
+			<Grid ColumnDefinitions="*,*">
+				<StackPanel
+					Orientation="Horizontal">
+					<Border
+						Height="25" BorderBrush="Black" BorderThickness="2"  Margin="5" >
+						<Image
+							Source="{Binding Image}"/>
+					</Border>
+					<StackPanel
+						 Margin="5">
+						<TextBlock>
+							<Run Text="{Binding Lastname}"/>
+							<Run Text="{Binding Name}"/>
+						</TextBlock>
+						<TextBlock
+							Text="{Binding IdRoleNavigation.Name, StringFormat='Роль: {0}'}"/>
+					</StackPanel>
+				</StackPanel>
+				<TextBlock
+					Name="tblock_timer"
+					HorizontalAlignment="Right"
+					Grid.Column="1"/>
+			</Grid>
+		</Panel>
+		<Grid
+			Grid.Row="1" RowDefinitions="auto,*" Grid.ColumnSpan="3">
+			<Button Content="Назад" Click="Button_ToLogWindow"/>
+			<Grid 
+				Grid.Row="1" ColumnDefinitions="*,*"
+				Name="grid_orderUserInfo">
+				<StackPanel
+					Name="panel_order">
+					<CalendarDatePicker/>
+					<TimePicker/>
+					<Grid
+						ColumnDefinitions="*,*">
+						<ListBox
+							Name="lbox_allServices">
+							<ListBox.ItemTemplate>
+								<DataTemplate>
+									
+								</DataTemplate>
+							</ListBox.ItemTemplate>
+						</ListBox>
+						<ListBox Grid.Column="1" Name="lbox_selectedServices">
+							<ListBox.ItemTemplate>
+								<DataTemplate>
+
+								</DataTemplate>
+							</ListBox.ItemTemplate>							
+						</ListBox>
+					</Grid>
+				</StackPanel>
+				<StackPanel
+					Grid.Column="1"
+					Name="panel_clientInfo">
+					<TextBox Text="{Binding Code}"/>
+					<TextBox Text="{Binding PassportSerie}"/>
+					<TextBox Text="{Binding PassportCode}"/>
+					<TextBox Text="{Binding DateOfBirth}"/>
+					<TextBox Text="{Binding Address}"/>
+				</StackPanel>
+			</Grid>
+		</Grid>
+	</Grid>
+</Window>

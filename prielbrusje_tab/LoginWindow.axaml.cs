@@ -112,7 +112,10 @@ public partial class LoginWindow : Window
 
     private void Button_ToServicesList(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-
+        _LogOutTimer.Stop();
+        ServiceWindow serviceWindow = new ServiceWindow(_LogUser, _Time);
+        serviceWindow.Show();
+        Close();
     }
 
     private void Button_toLogList(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
@@ -128,6 +131,14 @@ public partial class LoginWindow : Window
         _LogOutTimer.Stop(); //Остановка таймера
         MainWindow mainWindow = new MainWindow();
         mainWindow.Show();
+        Close();
+    }
+
+    private void Button_ToOrderForming(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        _LogOutTimer.Stop();
+        OrderFormingWindow orderFormingWindow = new OrderFormingWindow(_LogUser, _Time);
+        orderFormingWindow.Show();
         Close();
     }
 }

@@ -39,5 +39,11 @@ build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 [C:/Users/etoch/source/repos/prielbrusje/prielbrusje_tab/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/Users/etoch/source/repos/prielbrusje/prielbrusje_tab/OrderFormingWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/Users/etoch/source/repos/prielbrusje/prielbrusje_tab/PopupWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[C:/Users/etoch/source/repos/prielbrusje/prielbrusje_tab/ServiceWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
