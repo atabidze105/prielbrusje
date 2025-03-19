@@ -1,78 +1,82 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\",
+  "WorkspaceRootPath": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\class_student\\desktop\\demo\\prielbrusje\\prielbrusje_tab\\orderformingwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\orderformingwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\class_student\\desktop\\demo\\prielbrusje\\prielbrusje_tab\\orderformingwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\prdb\\desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\orderformingwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\orderformingwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\class_student\\desktop\\demo\\prielbrusje\\prielbrusje_tab\\addclientinfowindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\addclientinfowindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\prdb\\desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\orderformingwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\orderformingwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\class_student\\desktop\\demo\\prielbrusje\\prielbrusje_tab\\addclientinfowindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\addclientinfowindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\class_student\\desktop\\demo\\prielbrusje\\prielbrusje_tab\\models\\clientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\prdb\\desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\models\\clientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\models\\clientinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\class_student\\desktop\\demo\\prielbrusje\\prielbrusje_tab\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\prdb\\desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\class_student\\desktop\\demo\\prielbrusje\\prielbrusje_tab\\loginwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\prdb\\desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\loginwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\loginwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\class_student\\desktop\\demo\\prielbrusje\\prielbrusje_tab\\loginwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\prdb\\desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\addclientinfowindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\addclientinfowindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\prdb\\desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\addclientinfowindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\addclientinfowindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\prdb\\desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\prdb\\desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\loginwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\loginwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\class_student\\desktop\\demo\\prielbrusje\\prielbrusje_tab\\servicewindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\prdb\\desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\servicewindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\servicewindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\class_student\\desktop\\demo\\prielbrusje\\prielbrusje_tab\\logwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\prdb\\desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\logwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\logwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\class_student\\desktop\\demo\\prielbrusje\\prielbrusje_tab\\logwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\prdb\\desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\logwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\logwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\class_student\\desktop\\demo\\prielbrusje\\prielbrusje_tab\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\prdb\\desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\class_student\\desktop\\demo\\prielbrusje\\prielbrusje_tab\\servicewindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "AbsoluteMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|c:\\users\\prdb\\desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\servicewindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{5BC8B51A-CDE2-4DA8-83C8-8B383A6F1BAB}|prielbrusje_tab\\prielbrusje_tab.csproj|solutionrelative:prielbrusje_tab\\servicewindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 232,
       "DocumentGroups": [
         {
           "DockedWidth": 356,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "OrderFormingWindow.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\OrderFormingWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\OrderFormingWindow.axaml.cs",
               "RelativeDocumentMoniker": "prielbrusje_tab\\OrderFormingWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\OrderFormingWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\OrderFormingWindow.axaml.cs",
               "RelativeToolTip": "prielbrusje_tab\\OrderFormingWindow.axaml.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAwwGcAAAAIAAAA",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwDgAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-16T11:07:22.444Z",
               "IsPinned": true,
@@ -80,11 +84,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "OrderFormingWindow.axaml",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\OrderFormingWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\OrderFormingWindow.axaml",
               "RelativeDocumentMoniker": "prielbrusje_tab\\OrderFormingWindow.axaml",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\OrderFormingWindow.axaml",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\OrderFormingWindow.axaml",
               "RelativeToolTip": "prielbrusje_tab\\OrderFormingWindow.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-16T11:07:22.641Z",
@@ -92,142 +96,157 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AddClientInfoWindow.axaml",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\AddClientInfoWindow.axaml",
-              "RelativeDocumentMoniker": "prielbrusje_tab\\AddClientInfoWindow.axaml",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\AddClientInfoWindow.axaml",
-              "RelativeToolTip": "prielbrusje_tab\\AddClientInfoWindow.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-18T10:09:07.472Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AddClientInfoWindow.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\AddClientInfoWindow.axaml.cs",
-              "RelativeDocumentMoniker": "prielbrusje_tab\\AddClientInfoWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\AddClientInfoWindow.axaml.cs",
-              "RelativeToolTip": "prielbrusje_tab\\AddClientInfoWindow.axaml.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAA5wDsAAAAxAAAA",
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "prielbrusje_tab\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\Models\\Order.cs",
+              "RelativeToolTip": "prielbrusje_tab\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T10:09:07.318Z",
+              "WhenOpened": "2025-03-19T13:53:10.214Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "AddClientInfoWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\AddClientInfoWindow.axaml",
+              "RelativeDocumentMoniker": "prielbrusje_tab\\AddClientInfoWindow.axaml",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\AddClientInfoWindow.axaml",
+              "RelativeToolTip": "prielbrusje_tab\\AddClientInfoWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-18T10:09:07.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddClientInfoWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\AddClientInfoWindow.axaml.cs",
+              "RelativeDocumentMoniker": "prielbrusje_tab\\AddClientInfoWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\AddClientInfoWindow.axaml.cs",
+              "RelativeToolTip": "prielbrusje_tab\\AddClientInfoWindow.axaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwDsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T10:09:07.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "MainWindow.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\MainWindow.axaml.cs",
               "RelativeDocumentMoniker": "prielbrusje_tab\\MainWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\MainWindow.axaml.cs",
               "RelativeToolTip": "prielbrusje_tab\\MainWindow.axaml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-18T07:52:01.966Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-18T07:52:01.966Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "ServiceWindow.axaml",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\ServiceWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\ServiceWindow.axaml",
               "RelativeDocumentMoniker": "prielbrusje_tab\\ServiceWindow.axaml",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\ServiceWindow.axaml",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\ServiceWindow.axaml",
               "RelativeToolTip": "prielbrusje_tab\\ServiceWindow.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-16T10:28:02.521Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-16T10:28:02.521Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "ClientInfo.cs",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\Models\\ClientInfo.cs",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\Models\\ClientInfo.cs",
               "RelativeDocumentMoniker": "prielbrusje_tab\\Models\\ClientInfo.cs",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\Models\\ClientInfo.cs",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\Models\\ClientInfo.cs",
               "RelativeToolTip": "prielbrusje_tab\\Models\\ClientInfo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-18T11:46:40.447Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ServiceWindow.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\ServiceWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\ServiceWindow.axaml.cs",
               "RelativeDocumentMoniker": "prielbrusje_tab\\ServiceWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\ServiceWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\ServiceWindow.axaml.cs",
               "RelativeToolTip": "prielbrusje_tab\\ServiceWindow.axaml.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAowDYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T10:28:02.334Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LogWindow.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\LogWindow.axaml.cs",
-              "RelativeDocumentMoniker": "prielbrusje_tab\\LogWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\LogWindow.axaml.cs",
-              "RelativeToolTip": "prielbrusje_tab\\LogWindow.axaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T18:44:13.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginWindow.axaml",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\LoginWindow.axaml",
-              "RelativeDocumentMoniker": "prielbrusje_tab\\LoginWindow.axaml",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\LoginWindow.axaml",
-              "RelativeToolTip": "prielbrusje_tab\\LoginWindow.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-13T18:37:01.679Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "LoginWindow.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\LoginWindow.axaml.cs",
-              "RelativeDocumentMoniker": "prielbrusje_tab\\LoginWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\LoginWindow.axaml.cs",
-              "RelativeToolTip": "prielbrusje_tab\\LoginWindow.axaml.cs",
-              "ViewState": "AQIAAF8AAAAAAAAAAAAIwC0AAABRAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T18:37:01.478Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "LogWindow.axaml",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\LogWindow.axaml",
-              "RelativeDocumentMoniker": "prielbrusje_tab\\LogWindow.axaml",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\LogWindow.axaml",
-              "RelativeToolTip": "prielbrusje_tab\\LogWindow.axaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-13T18:44:13.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-16T10:28:02.334Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "LogWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\LogWindow.axaml.cs",
+              "RelativeDocumentMoniker": "prielbrusje_tab\\LogWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\LogWindow.axaml.cs",
+              "RelativeToolTip": "prielbrusje_tab\\LogWindow.axaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T18:44:13.309Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\LoginWindow.axaml",
+              "RelativeDocumentMoniker": "prielbrusje_tab\\LoginWindow.axaml",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\LoginWindow.axaml",
+              "RelativeToolTip": "prielbrusje_tab\\LoginWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-13T18:37:01.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoginWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\LoginWindow.axaml.cs",
+              "RelativeDocumentMoniker": "prielbrusje_tab\\LoginWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\LoginWindow.axaml.cs",
+              "RelativeToolTip": "prielbrusje_tab\\LoginWindow.axaml.cs",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAIwC0AAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T18:37:01.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LogWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\LogWindow.axaml",
+              "RelativeDocumentMoniker": "prielbrusje_tab\\LogWindow.axaml",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\LogWindow.axaml",
+              "RelativeToolTip": "prielbrusje_tab\\LogWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-13T18:44:13.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "MainWindow.axaml",
-              "DocumentMoniker": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\MainWindow.axaml",
               "RelativeDocumentMoniker": "prielbrusje_tab\\MainWindow.axaml",
-              "ToolTip": "C:\\Users\\Class_Student\\Desktop\\demo\\prielbrusje\\prielbrusje_tab\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\prdb\\Desktop\\prielbrusje\\prielbrusje\\prielbrusje_tab\\MainWindow.axaml",
               "RelativeToolTip": "prielbrusje_tab\\MainWindow.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-13T20:08:09.685Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-13T20:08:09.685Z"
             }
           ]
         }

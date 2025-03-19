@@ -12,7 +12,7 @@
 	WindowStartupLocation="CenterOwner"
 	RequestedThemeVariant="Light">
 	<Grid
-		Name="grid_formingOrder"
+		Name="grid_formingOrder" x:DataType="vm:User"
 		ColumnDefinitions="*,*,*" RowDefinitions="auto,*,auto">
 		<Panel
 			Background="rgb(118, 227, 131)" Grid.ColumnSpan="3">
@@ -41,17 +41,25 @@
 			</Grid>
 		</Panel>
 		<Grid
-			Grid.Row="1" RowDefinitions="auto,*" Grid.ColumnSpan="3">
+			Grid.Row="1" RowDefinitions="auto,*,auto" Grid.ColumnSpan="3">
 			<Button Content="Назад" Click="Button_ToLogWindow"/>
 			<Grid
-				ShowGridLines="True"
+				ShowGridLines="False"
 				Grid.Row="1" ColumnDefinitions="2*,*" RowDefinitions="*,*">
 				<StackPanel
-					Name="panel_order">
-					<TextBox IsEnabled="False"  HorizontalAlignment="Left" Watermark="Код заказа"
+					Name="panel_order" x:DataType="vm:Order">
+					<TextBox Name="tbox_orderCode" IsEnabled="False"  HorizontalAlignment="Left" Watermark="Код заказа"
 							 Text="{Binding Code}"/>
 					<CalendarDatePicker Name="clndrdatepicker_closingDate"/>
 					<TimePicker Name="timepicker_rentTime" MinuteIncrement="20" ClockIdentifier="24HourClock"/>
+					<ComboBox
+						Name="cbox_orderStatus" x:DataType="vm:Status">
+						<ComboBox.ItemTemplate>
+							<DataTemplate>
+								<TextBlock Text="{Binding Name}"/>
+							</DataTemplate>
+						</ComboBox.ItemTemplate>
+					</ComboBox>
 				</StackPanel>
 				<Grid
 					Grid.Row="1"
@@ -67,7 +75,7 @@
 										<TextBlock Text="{Binding Name}" TextWrapping="WrapWithOverflow"/>
 										<TextBlock Text="{Binding PricePerHour, StringFormat='{}{0} руб./час'}"
 												   TextWrapping="WrapWithOverflow" Grid.Column="1"/>
-										<Button Grid.Column="2" Height="30">
+										<Button Tag="{Binding Id}" Grid.Column="2" Height="30" Click="Button_AddToList">
 											<Image Source="/Assets/add.png"/>
 										</Button>
 									</Grid>
@@ -78,7 +86,18 @@
 					<ListBox Grid.Column="1" Name="lbox_selectedServices">
 						<ListBox.ItemTemplate>
 							<DataTemplate>
-
+								<Border
+									BorderBrush="Black" BorderThickness="1" Background="White">
+									<Grid
+										Margin="5" ColumnDefinitions="*,*,auto">
+										<TextBlock Text="{Binding Name}" TextWrapping="WrapWithOverflow"/>
+										<TextBlock Text="{Binding PricePerHour, StringFormat='{}{0} руб./час'}"
+												   TextWrapping="WrapWithOverflow" Grid.Column="1"/>
+										<Button Tag="{Binding Id}" Grid.Column="2" Height="30" Click="Button_DelFromList">
+											<Image Source="/Assets/del.png"/>
+										</Button>
+									</Grid>
+								</Border>
 							</DataTemplate>
 						</ListBox.ItemTemplate>
 					</ListBox>
@@ -98,7 +117,7 @@
 					</ComboBox>
 					<Button Content="Добавить информацию о клиенте" Click="Button_AddClient"/>
 					<StackPanel
-						Name="spanel_selectedUserInfo">
+						Name="spanel_selectedUserInfo" x:DataType="vm:ClientInfo">
 						<TextBlock Text="{Binding Code, StringFormat='Код: {0}'}"/>
 						<TextBlock>
 							<Run Text="Паспортные данные:"/>
@@ -110,6 +129,7 @@
 					</StackPanel>
 				</StackPanel>
 			</Grid>
+		<Button Grid.Row="2" Margin="5" Content="Добавить заказ" Click="Button_AddOrder"/>
 		</Grid>
 	</Grid>
 </Window>

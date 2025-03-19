@@ -20,9 +20,11 @@ public partial class OrderFormingWindow : Window
     private Order _FormingOrder = new Order();
     private ClientInfo _FormingClientInfo = new ClientInfo();
     private List<ClientInfo> _Clients = DBContext.ClientInfos.OrderBy(x => x.Id).ToList();
+    private List<Status> _Statuses = DBContext.Statuses.OrderBy(x => x.Id).ToList();
 
     private ObservableCollection<Service> _AllServices = new ObservableCollection<Service>( DBContext.Services.OrderBy(x => x.Id) );
     private ObservableCollection<Service> _SelectedServices = new ObservableCollection<Service>();
+
 
     public OrderFormingWindow()
     {
@@ -52,6 +54,7 @@ public partial class OrderFormingWindow : Window
 
         lbox_allServices.ItemsSource = _AllServices;
         lbox_selectedServices.ItemsSource = _SelectedServices;
+        cbox_orderStatus.ItemsSource = _Statuses;
     }
 
 
@@ -100,6 +103,7 @@ public partial class OrderFormingWindow : Window
                 return;
             }
 
+            tbox_orderCode.Text = $"{_FormingClientInfo.Code}/{DateTime.Now.Day}.{DateTime.Now.Month}.{DateTime.Now.Year}";
             spanel_selectedUserInfo.DataContext = _FormingClientInfo;
         }
         catch
@@ -111,6 +115,50 @@ public partial class OrderFormingWindow : Window
     private void ComboBox_SelectionChangedClientInfo(object? sender, Avalonia.Controls.SelectionChangedEventArgs e)
     {
         _FormingClientInfo = cbox_clientInfos.SelectedItem as ClientInfo;
+
+        tbox_orderCode.Text = $"{_FormingClientInfo.Code}/{DateTime.Now.Day}.{DateTime.Now.Month}.{DateTime.Now.Year}";
         spanel_selectedUserInfo.DataContext = _FormingClientInfo;
+    }
+
+    private void Button_AddToList(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        var button = (sender as Button)!;
+        _SelectedServices.Add(_AllServices.Where(x => x.Id == (int)button.Tag).First());
+        _AllServices.Remove(_AllServices.Where(x => x.Id == (int)button.Tag).First());
+
+        lbox_allServices.ItemsSource = _AllServices;
+        lbox_selectedServices.ItemsSource = _SelectedServices;
+    }
+
+    private void Button_DelFromList(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        var button = (sender as Button)!;
+        _AllServices.Add(_SelectedServices.Where(x => x.Id == (int)button.Tag).First());
+        _SelectedServices.Remove(_SelectedServices.Where(x => x.Id == (int)button.Tag).First());
+
+        lbox_allServices.ItemsSource = _AllServices;
+        lbox_selectedServices.ItemsSource = _SelectedServices;
+    }
+
+    private void Button_AddOrder(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        int id = 0;
+
+        if (_FormingClientInfo.Id == 0)
+            DBContext.ClientInfos.Add(_FormingClientInfo);
+
+        id = _FormingClientInfo.Id;
+
+        _FormingOrder.IdClient = id;
+        
+        _FormingOrder.DateTimeOrder = DateTime.Now;
+        _FormingOrder.RentTime = new TimeOnly(timepicker_rentTime.SelectedTime.Value.Hours, timepicker_rentTime.SelectedTime.Value.Minutes);
+
+
+
+        DBContext.Orders.Add(_FormingOrder);
+
+
+
     }
 }
