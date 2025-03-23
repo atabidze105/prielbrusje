@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("prielbrusje_tab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e61bdb4c6160b310098d007d5959b7104055c588")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39b5a647e1f7c84585d0fd9a6835ac59d93ea947")]
 [assembly: System.Reflection.AssemblyProductAttribute("prielbrusje_tab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("prielbrusje_tab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

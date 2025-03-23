@@ -96,7 +96,8 @@ public partial class OrderFormingWindow : Window
             _FormingClientInfo = new ClientInfo();
             AddClientInfoWindow addClientInfoWindow = new AddClientInfoWindow(_FormingClientInfo);
             await addClientInfoWindow.ShowDialog(this);
-            if (_FormingClientInfo.PassportSerie.Contains("_") || _FormingClientInfo.PassportCode.Contains("_") ||
+            if (_FormingClientInfo.PassportSerie == null || _FormingClientInfo.PassportCode == null ||
+                _FormingClientInfo.PassportSerie.Contains("_") || _FormingClientInfo.PassportCode.Contains("_") ||
                 _FormingClientInfo.Address == "" || _FormingClientInfo.Address == null)
             {
                 _FormingClientInfo = new ClientInfo();
