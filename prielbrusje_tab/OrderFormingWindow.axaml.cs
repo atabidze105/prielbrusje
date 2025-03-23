@@ -47,7 +47,7 @@ public partial class OrderFormingWindow : Window
         spanel_selectedUserInfo.DataContext = _FormingClientInfo;
 
         TimeSpan t = _LogTime - DateTime.Now;
-        tblock_timer.Text = Convert.ToDateTime(t.ToString()).ToString("HH:mm:ss");
+        tblock_timer.Text = Convert.ToDateTime(t.ToString()).ToString("HH:mm");
 
         _LogOutTimer.Tick += DispatcherTimer_LogOut;
         _LogOutTimer.Start();
@@ -70,7 +70,7 @@ public partial class OrderFormingWindow : Window
                 await popupWindow.ShowDialog(this);
             }
             _Time = Convert.ToDateTime(ts.ToString()); //Преобразование РАЗНОСТИ выше в DateTime для удобной конвертации в string
-            tblock_timer.Text = _Time.ToString("HH:mm:ss"); //В тексте не будут указаны секунды
+            tblock_timer.Text = _Time.ToString("HH:mm"); //В тексте не будут указаны секунды
         }
         catch //Когда РАЗНОСТЬ становится отрицательным значением, срабатывает исключение. К этому времени как раз истекает сессия
         {
@@ -116,7 +116,7 @@ public partial class OrderFormingWindow : Window
     {
         _FormingClientInfo = cbox_clientInfos.SelectedItem as ClientInfo;
 
-        tbox_orderCode.Text = $"{_FormingClientInfo.Code}/{DateTime.Now.Day}.{DateTime.Now.Month}.{DateTime.Now.Year}";
+        tbox_orderCode.Text = $"{_FormingClientInfo.Code}/{new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day).ToString("dd.MM.yyyy")}";
         spanel_selectedUserInfo.DataContext = _FormingClientInfo;
     }
 
@@ -140,25 +140,40 @@ public partial class OrderFormingWindow : Window
         lbox_selectedServices.ItemsSource = _SelectedServices;
     }
 
-    private void Button_AddOrder(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    private async void Button_AddOrder(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-        int id = 0;
+        try
+        {
+            int id = 0;
 
-        if (_FormingClientInfo.Id == 0)
-            DBContext.ClientInfos.Add(_FormingClientInfo);
+            if (_FormingClientInfo.Id == 0)
+            {
+                id = DBContext.ClientInfos.OrderByDescending(x => x.Id).First().Id + 1;
+                DBContext.ClientInfos.Add(_FormingClientInfo);
+            }
+            else
+                id = _FormingClientInfo.Id;
 
-        id = _FormingClientInfo.Id;
+            foreach (Service service in _SelectedServices)
+                _FormingOrder.IdServices.Add(service);
 
-        _FormingOrder.IdClient = id;
-        
-        _FormingOrder.DateTimeOrder = DateTime.Now;
-        _FormingOrder.RentTime = new TimeOnly(timepicker_rentTime.SelectedTime.Value.Hours, timepicker_rentTime.SelectedTime.Value.Minutes);
+            _FormingOrder.IdClient = id;
 
+            _FormingOrder.DateTimeOrder = DateTime.Now;
+            _FormingOrder.RentTime = new TimeOnly(timepicker_rentTime.SelectedTime.Value.Hours, timepicker_rentTime.SelectedTime.Value.Minutes);
 
+            DBContext.Orders.Add(_FormingOrder);
+            DBContext.SaveChanges();
 
-        DBContext.Orders.Add(_FormingOrder);
-
-
-
+            _LogOutTimer.Stop();
+            LoginWindow loginWindow = new LoginWindow(_LogUser, _Time);
+            loginWindow.Show();
+            Close();
+        }
+        catch
+        {
+            PopupWindow popupWindow = new PopupWindow("Внимание! Данные введены некорректно");
+            await popupWindow.ShowDialog(this);
+        }
     }
 }

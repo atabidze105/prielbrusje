@@ -57,8 +57,8 @@ public partial class AddClientInfoWindow : Window
 
             _Client.DateOfBirth = new DateOnly(clndrdatepicker_birthday.SelectedDate.Value.Year, clndrdatepicker_birthday.SelectedDate.Value.Month, clndrdatepicker_birthday.SelectedDate.Value.Day);
 
-            //DBContext.ClientInfos.Add(_Client);
-            //DBContext.SaveChanges();
+            DBContext.ClientInfos.Add(_Client);
+            DBContext.SaveChanges();
             this.Close();
         }
         catch 

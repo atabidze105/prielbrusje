@@ -23,22 +23,6 @@ public partial class LoginWindow : Window
         grid_login.DataContext = _LogUser;
         RoleEnability(_LogUser.IdRole);
     }
-    //public LoginWindow(User user)
-    //{
-    //    _LogUser = user;
-    //    _LogTime = DateTime.Now.AddMinutes(10);
-
-    //    InitializeComponent();
-
-    //    grid_login.DataContext = _LogUser;
-    //    RoleEnability(_LogUser.IdRole);
-
-    //    TimeSpan t = _LogTime - DateTime.Now;
-    //    tblock_timer.Text = Convert.ToDateTime(t.ToString()).ToString("HH:mm:ss");
-
-    //    _LogOutTimer.Tick += DispatcherTimer_LogOut;
-    //    _LogOutTimer.Start();
-    //}
     public LoginWindow(User user, DateTime dateTime)
     {
         _LogUser = user;
@@ -51,7 +35,7 @@ public partial class LoginWindow : Window
         RoleEnability(_LogUser.IdRole);
 
         TimeSpan t = _LogTime - DateTime.Now;
-        tblock_timer.Text = Convert.ToDateTime(t.ToString()).ToString("HH:mm:ss");
+        tblock_timer.Text = Convert.ToDateTime(t.ToString()).ToString("HH:mm");
 
         _LogOutTimer.Tick += DispatcherTimer_LogOut;
         _LogOutTimer.Start();
@@ -81,9 +65,6 @@ public partial class LoginWindow : Window
                 }
                 break;
             default:
-                {
-
-                }
                 break;
         }
     }
@@ -99,7 +80,7 @@ public partial class LoginWindow : Window
                 await popupWindow.ShowDialog(this);
             }
             _Time = Convert.ToDateTime(ts.ToString()); //Преобразование РАЗНОСТИ выше в DateTime для удобной конвертации в string
-            tblock_timer.Text = _Time.ToString("HH:mm:ss"); //В тексте не будут указаны секунды
+            tblock_timer.Text = _Time.ToString("HH:mm"); //В тексте не будут указаны секунды
         }
         catch //Когда РАЗНОСТЬ становится отрицательным значением, срабатывает исключение. К этому времени как раз истекает сессия
         {

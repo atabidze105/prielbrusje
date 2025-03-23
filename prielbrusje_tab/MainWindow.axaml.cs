@@ -41,7 +41,7 @@ namespace prielbrusje_tab
                     if (user.Password == tbox_password.Text)
                     {
                         user.IdLogins.Add(new LoginHistory() { LoginDateTime = DateTime.Now, IsValid = true });
-                        //DBContext.SaveChanges();
+                        DBContext.SaveChanges();
                         LoginWindow loginWindow = new LoginWindow(user, new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 0, 10, 0));
                         loginWindow.Show();
                         Close();
@@ -58,7 +58,7 @@ namespace prielbrusje_tab
 
         private void Button_MaskOff(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
         {
-            tbox_password.PasswordChar = '\0';
+            tbox_password.PasswordChar = tbox_password.PasswordChar == '*' ? '\0' : '*';
         }
 
     }

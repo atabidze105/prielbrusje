@@ -17,7 +17,7 @@ public partial class LogWindow : Window
     private User _LogUser;
     private DateTime _Time = new();
     private DateTime _LogTime = new();
-    private List<LoginHistory> _LoginHistory = DBContext.LoginHistories.Include(x => x.IdUsers).OrderBy(x => x.Id).ToList();
+    private List<LoginHistory> _LoginHistory = DBContext.LoginHistories.Include(x => x.IdUsers).OrderByDescending(x => x.LoginDateTime).ToList();
 
     public LogWindow()
     {
@@ -38,7 +38,7 @@ public partial class LogWindow : Window
         lbox_loginHistory.ItemsSource = _LoginHistory.ToList();
 
         TimeSpan t = _LogTime - DateTime.Now;
-        tblock_timer.Text = Convert.ToDateTime(t.ToString()).ToString("HH:mm:ss");
+        tblock_timer.Text = Convert.ToDateTime(t.ToString()).ToString("HH:mm");
 
         _LogOutTimer.Tick += DispatcherTimer_LogOut;
         _LogOutTimer.Start();
@@ -55,7 +55,7 @@ public partial class LogWindow : Window
                 await popupWindow.ShowDialog(this);
             }
             _Time = Convert.ToDateTime(ts.ToString()); //Преобразование РАЗНОСТИ выше в DateTime для удобной конвертации в string
-            tblock_timer.Text = _Time.ToString("HH:mm:ss"); //В тексте не будут указаны секунды
+            tblock_timer.Text = _Time.ToString("HH:mm"); //В тексте не будут указаны секунды
         }
         catch //Когда РАЗНОСТЬ становится отрицательным значением, срабатывает исключение. К этому времени как раз истекает сессия
         {
